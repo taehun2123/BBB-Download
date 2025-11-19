@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBB 앱 다운로드 | CoShow 2025</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 24px;
+            padding: 40px;
+            max-width: 500px;
+            width: 100%;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        .logo {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .logo h1 {
+            font-size: 48px;
+            font-weight: 800;
+            color: #667eea;
+            margin-bottom: 8px;
+        }
+
+        .logo p {
+            font-size: 16px;
+            color: #666;
+        }
+
+        .event-badge {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        .section {
+            margin-bottom: 24px;
+        }
+
+        .section-title {
+            font-size: 14px;
+            color: #999;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        .download-btn {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 18px 24px;
+            border-radius: 16px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            margin-bottom: 12px;
+            border: 2px solid transparent;
+        }
+
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .btn-ios {
+            background: linear-gradient(135deg, #000000 0%, #434343 100%);
+            color: white;
+        }
+
+        .btn-android-test {
+            background: linear-gradient(135deg, #34A853 0%, #0F9D58 100%);
+            color: white;
+        }
+
+        .btn-android-apk {
+            background: white;
+            color: #333;
+            border: 2px solid #e0e0e0;
+        }
+
+        .btn-android-apk:hover {
+            border-color: #34A853;
+        }
+
+        .btn-content {
+            display: flex;
+            align-items: center;
+            flex: 1;
+        }
+
+        .btn-icon {
+            font-size: 32px;
+            margin-right: 16px;
+        }
+
+        .btn-text {
+            text-align: left;
+        }
+
+        .btn-title {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .btn-subtitle {
+            font-size: 13px;
+            opacity: 0.8;
+        }
+
+        .btn-arrow {
+            font-size: 24px;
+            opacity: 0.5;
+        }
+
+        .divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #e0e0e0, transparent);
+            margin: 30px 0;
+        }
+
+        .info-box {
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 16px;
+            margin-top: 20px;
+        }
+
+        .info-box h3 {
+            font-size: 14px;
+            color: #333;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .info-box p {
+            font-size: 13px;
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 8px;
+        }
+
+        .info-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #34A853;
+            color: white;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 11px;
+            font-weight: 600;
+            margin-left: 8px;
+            vertical-align: middle;
+        }
+
+        .warning {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 12px;
+            border-radius: 8px;
+            margin-top: 12px;
+        }
+
+        .warning p {
+            font-size: 13px;
+            color: #856404;
+            margin: 0;
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 30px 20px;
+            }
+
+            .logo h1 {
+                font-size: 40px;
+            }
+
+            .btn-title {
+                font-size: 15px;
+            }
+
+            .btn-subtitle {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <h1>BBB</h1>
+            <p>Bus Buddy Buddy</p>
+            <div style="margin-top: 16px;">
+                <span class="event-badge">🎪 CoShow 2024 Special</span>
+            </div>
+        </div>
+
+        <!-- iOS Section -->
+        <div class="section">
+            <div class="section-title">iOS (iPhone & iPad)</div>
+            <a href="https://apps.apple.com/app/bbb" class="download-btn btn-ios">
+                <div class="btn-content">
+                    <div class="btn-icon">🍎</div>
+                    <div class="btn-text">
+                        <div class="btn-title">App Store</div>
+                        <div class="btn-subtitle">iOS 13.0 이상</div>
+                    </div>
+                </div>
+                <div class="btn-arrow">→</div>
+            </a>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- Android Section -->
+        <div class="section">
+            <div class="section-title">Android</div>
+
+            <!-- Internal Testing -->
+            <a href="https://play.google.com/apps/test/com.busbuddybuddy/2" class="download-btn btn-android-test">
+                <div class="btn-content">
+                    <div class="btn-icon">📱</div>
+                    <div class="btn-text">
+                        <div class="btn-title">
+                            Google Play (베타 테스트)
+                            <span class="badge">추천</span>
+                        </div>
+                        <div class="btn-subtitle">하루 100명 제한 · 간편 설치</div>
+                    </div>
+                </div>
+                <div class="btn-arrow">→</div>
+            </a>
+
+            <!-- APK Direct Download -->
+            <a href="https://github.com/BBB-bus-buddy-buddy/App-Bus-buddy-buddy/releases/download/v1.0.1/BBB-app-release.apk" class="download-btn btn-android-apk">
+                <div class="btn-content">
+                    <div class="btn-icon">📦</div>
+                    <div class="btn-text">
+                        <div class="btn-title">APK 직접 다운로드</div>
+                        <div class="btn-subtitle">베타 테스트 마감 시 사용</div>
+                    </div>
+                </div>
+                <div class="btn-arrow">↓</div>
+            </a>
+
+            <div class="info-box">
+                <h3>📌 Android 설치 안내</h3>
+                <p><strong>베타 테스트 (권장):</strong> Google 계정으로 로그인 후 '참여' 클릭하면 Play 스토어에서 바로 설치 가능</p>
+                <p><strong>APK 다운로드:</strong> Google 계정이 없는 경우 사용. 설치 시 "알 수 없는 출처" 허용 필요</p>
+            </div>
+
+            <div class="warning">
+                <p>⚠️ APK 설치 시: 설정 → 보안 → 알 수 없는 출처 허용</p>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- Event Info -->
+        <div class="info-box" style="background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%); border: 2px solid #667eea30;">
+            <h3>🎁 CoShow 이벤트</h3>
+            <p>앱 설치 및 미션 달성 시 상품 지급!</p>
+            <p style="font-size: 12px; margin-top: 12px; opacity: 0.7;">📍 벡스코 전시장 | 📅 2024년 11월</p>
+        </div>
+    </div>
+
+    <script>
+        // 사용자의 OS 감지 및 자동 스크롤
+        window.addEventListener('load', function() {
+            const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+            // iOS 감지
+            if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+                // iOS 섹션으로 스크롤 (이미 상단이므로 불필요)
+                console.log('iOS detected');
+            }
+            // Android 감지
+            else if (/android/i.test(userAgent)) {
+                // Android 섹션으로 부드럽게 스크롤
+                const androidSection = document.querySelector('.section:nth-of-type(2)');
+                if (androidSection) {
+                    androidSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+                console.log('Android detected');
+            }
+        });
+
+        // 클릭 추적 (선택사항 - Google Analytics 등과 연동 가능)
+        document.querySelectorAll('.download-btn').forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                const btnType = this.classList.contains('btn-ios') ? 'iOS' :
+                            this.classList.contains('btn-android-test') ? 'Android Beta' : 'Android APK';
+                console.log(`Download clicked: ${btnType}`);
+                // Google Analytics 이벤트 전송 예시:
+                // gtag('event', 'download_click', { 'platform': btnType });
+            });
+        });
+    </script>
+</body>
+</html>
